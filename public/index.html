@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Úkolníček</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Úkolníček</h1>
+
+    <form id="todo-form">
+      <input type="text" id="title" placeholder="Nový úkol…" maxlength="200" required />
+      <select id="priority">
+        <option value="nízká">Nízká</option>
+        <option value="střední" selected>Střední</option>
+        <option value="vysoká">Vysoká</option>
+      </select>
+      <button type="submit">Přidat</button>
+    </form>
+
+    <p id="message" class="message"></p>
+    <p id="loading" class="loading" hidden>Načítám data...</p>
+
+    <ul id="todo-list"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
